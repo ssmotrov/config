@@ -3,3 +3,14 @@
 info:
   description: Training configuration repo
 
+eureka:
+  instance:
+    securePortEnabled: true
+    hostname: ${vcap.application.uris[0]}
+    nonSecurePort: 80    
+
+  client:
+    serviceUrl:
+      defaultZone: ${vcap.services.eureka.credentials.url:https://admin:user@eureka-server-bowllike-potholer.cfapps.io}
+    healthcheck:
+      enabled: true   

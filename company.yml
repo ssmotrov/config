@@ -3,4 +3,4 @@
 spring:
   profiles: cloud
 
-message: Stan
+message: Stan Smotrov

@@ -8,6 +8,9 @@ eureka:
     securePortEnabled: true
     hostname: ${vcap.application.uris[0]}
     nonSecurePort: 80    
+    statusPageUrl: https://${eureka.hostname}/info
+    healthCheckUrl: https://${eureka.hostname}/health
+    homePageUrl: https://${eureka.hostname}/
 
   client:
     enabled: true  

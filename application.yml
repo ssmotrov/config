@@ -10,6 +10,7 @@ eureka:
     nonSecurePort: 80    
     statusPageUrl: https://${vcap.application.uris[0]}/info
     healthCheckUrl: https://${vcap.application.uris[0]}/health
+    secureHealthCheckUrl: https://${vcap.application.uris[0]}/health
     homePageUrl: https://${vcap.application.uris[0]}/
 
   client:

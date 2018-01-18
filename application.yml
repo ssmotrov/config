@@ -1,6 +1,4 @@
 ---
-server:
-  port: 80
 
 info:
   description: Training configuration repo

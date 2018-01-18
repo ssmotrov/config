@@ -11,6 +11,6 @@ eureka:
 
   client:
     serviceUrl:
-      defaultZone: ${vcap.services.eureka.credentials.url:https://admin:user@eureka-server-bowllike-potholer.cfapps.io}
+      defaultZone: ${vcap.services.eureka.credentials.url}
     healthcheck:
       enabled: true   

@@ -3,6 +3,12 @@
 info:
   description: Training configuration repo
 
+
+---
+
+spring:
+  profiles: cloud
+
 eureka:
   instance:
     securePortEnabled: true

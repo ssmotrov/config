@@ -3,12 +3,6 @@
 info:
   description: Training configuration repo
 
-
----
-
-spring:
-  profiles: cloud
-
 eureka:
   instance:
     securePortEnabled: true
@@ -16,6 +10,7 @@ eureka:
     nonSecurePort: 80    
 
   client:
+    enabled: true  
     serviceUrl:
       defaultZone: ${vcap.services.eureka.credentials.url}
     healthcheck:

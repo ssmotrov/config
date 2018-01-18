@@ -1,4 +1,6 @@
 ---
+server:
+  port: 80
 
 info:
   description: Training configuration repo
@@ -7,7 +9,7 @@ eureka:
   instance:
     securePortEnabled: true
     hostname: ${vcap.application.uris[0]}
-    port: 80
+    hostport: 80
     nonSecurePort: 80    
     statusPageUrl: https://${vcap.application.uris[0]}/info
     healthCheckUrl: https://${vcap.application.uris[0]}/health
@@ -16,6 +18,7 @@ eureka:
 
   client:
     enabled: true  
+    register-with-eureka: true
     serviceUrl:
       defaultZone: ${vcap.services.eureka.credentials.url}
     healthcheck:

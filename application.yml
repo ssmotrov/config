@@ -1,4 +1,7 @@
 ---
+spring:
+  zipkin:
+    baseUrl: ${vcap.services.config.credentials.zipkin}
 
 info:
   description: Training configuration repo
